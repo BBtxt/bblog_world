@@ -52,7 +52,10 @@ const PostDetail = ({ post }) => {
       </div>
       <div className="px-4 lg:px-0">
       <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
-        <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
+        <h1 className="mb-8 text-3xl font-semibold">
+          {post.title}
+        </h1>
+        {/* <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
           <img
             src={post.author.photo.url}
             alt={post.author.name}
@@ -63,7 +66,7 @@ const PostDetail = ({ post }) => {
           <p className="inline align-middle text-grey-700 ml-2 text-lg">
             {post.author.name}
           </p>
-        </div>
+        </div> */}
         <div className="font-medium text-grey-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,9 +87,6 @@ const PostDetail = ({ post }) => {
           </span>
         </div>
       </div>
-      <h1 className="mb-8 text-3xl font-semibold">
-        {post.title}
-      </h1>
       {post.content.raw.children.map((typeObj, index) => {
         const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
 

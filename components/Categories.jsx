@@ -19,7 +19,7 @@ const Categories = () => {
           </span>
         </Link>
       ))}
-    </div>
+    </div> 
   );
 };
 
