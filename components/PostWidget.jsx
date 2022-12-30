@@ -22,16 +22,15 @@ const PostWidget = ({ categories, slug }) => {
         {slug ? "Related Posts" : "Recent Posts"}
       </h3>
       {relatedPosts.map((post) => (
-        <div key={post.title} className="flex items-center w-full">
+        <div key={post.title} className="flex items-center w-full mb-2">
           <div className="w-16 flex-none">
             <img
               src={post.featuredImage.url}
               alt={post.title}
-              
-              className=" w-12 h-12 object-fill align-middle rounded-full"
+              className=" w-16 h-16 object-fill align-middle rounded-full"
             />
           </div>
-          <div className="flex-grow ml-4">
+          <div className="flex-grow ml-4 ">
               <p className="text-grow font-xs">
                 {moment(post.createdAt).format('MMM DD, YYYY')}
               </p>
