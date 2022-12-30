@@ -6,7 +6,7 @@ const categories = [{name: 'React', slug: "react"}, {name: "webDev", slug: "webD
 const Header = () => {
   return (
     <div className='container mx-auto px-10 mb-8 '>
-        <div className='border-b w-full inline-block border-violet-400 py-8'>
+        <div className='border-b-4 w-full inline-block border-violet-400 py-8'>
             <div className=' md:float-left block'>
                 <Link href="/">
                     <span className='cursor-pointer font-bold text-4xl text-stone-800'>
