@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 const Author = ({ author }) => {
   return (
     <div className=" flex items-center justify-around bg-white shadow-lg rounded-lg lg:p-8  mb-0">
     <div className=" pt-3 pb-4">
-      <img
+      <Image
         src={author.photo.url}
         alt={author.name}
         height="200px"
