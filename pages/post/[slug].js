@@ -4,6 +4,7 @@ import {
   PostDetail,
   Categories,
   PostWidget,
+  Contact,
   
 } from "../../components";
 
@@ -17,7 +18,7 @@ const postDetails = ({ post }) => {
         <div className="col-span-1 lg:col-span-4">
         <div className="relative lg:sticky top-8">
             <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
-         
+            <Contact />
           </div>
         </div>
       </div>  
