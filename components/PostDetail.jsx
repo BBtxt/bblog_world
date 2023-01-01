@@ -51,8 +51,8 @@ const PostDetail = ({ post }) => {
         />
       </div>
       <div className="px-4 lg:px-0">
-      <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
-        <h1 className="mb-8 text-3xl font-semibold">
+      <div className="block lg:flex  flex-col text-center items-center justify-center mb-8 w-full">
+        <h1 className="mb-4 text-3xl font-semibold">
           {post.title}
         </h1>
         {/* <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
